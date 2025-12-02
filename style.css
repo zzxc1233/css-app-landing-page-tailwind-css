@@ -3,4 +3,12 @@
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f6f6fb;
 }
+
+.containerss {
+    width: 100%; /* 1. ให้ยืดเต็มจอในมือถือ */
+    max-width: 1200px; /* 2. ล็อกความกว้างไม่ให้เกินนี้ในจอใหญ่ */
+    margin: 0 auto; /* 3. จัดให้อยู่กึ่งกลางหน้าจอ */
+    padding-inline: 1rem; /* 4. เผื่อขอบซ้ายขวาไว้หน่อย ไม่ให้เนื้อหาชนขอบจอ */
+    }
