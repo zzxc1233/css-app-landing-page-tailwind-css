@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <section class="navbar max-w-screen bg-[#f6f6fb] py-[24px] px-[24px] flex justify-center">
+    <section class="navbar max-w-screen bg-[#f6f6fb] py-[24px] px-[24px]  justify-center hidden md:flex">
       <div
         class="container flex flex-row justify-between items-center bg-white py-[12px] px-[80px] rounded-[99px] max-w-full"
       >
@@ -30,12 +30,15 @@
       class="herosection max-w-screen bg-[#f6f6fb] py-[120px] px-[120px] justify-center items-center"
     >
       <div class="hero-container flex flex-col justify-center items-center gap-[40px]">
-        <div class="tag px-[20px] py-[8px] bg-[#563AFF]/10 text-[#5e44FF] rounded-[16px]">
+        <span class="flex md:hidden logo-icon  justify-center items-center mb-2">
+          <img src="img/logo.png" alt="Acme-logo" class="h-20" />
+        </span>
+        <div class="tag px-[20px] py-[8px] bg-[#563AFF]/10 text-[#5e44FF] rounded-[16px] hidden md:flex">
           <p class="font-tag">🌈️ Acme Productivity App</p>
         </div>
 
-        <div class="frame flex flex-col justify-center items-center gap-[24px]">
-          <h1 class="text-[80px] leading-[84px] font-bold">
+        <div class="frame  flex-col justify-center items-center gap-[24px] hidden md:flex">
+          <h1 class="text-[80px] leading-[84px] font-bold hidden md:flex">
             Boost Your <span class="text-[#5e44FF]">Product</span>ivity
           </h1>
           <h3 class="text-[24px] leading-[32px] font-bold">
@@ -43,15 +46,15 @@
           </h3>
         </div>
 
-        <button class="px-[36px] py-[16px] bg-neutral-950 text-white rounded-[16px]">
+        <button class="px-[36px] py-[16px] bg-neutral-950 text-white rounded-[16px] ">
           Start Free Trial
         </button>
       </div>
     </section>
 
-    <div class="bg-[#f6f6fb] max-h-screen min-h-96 flex items-center justify-center">
+    <div class="bg-[#f6f6fb] max-h-screen min-h-96 flex items-center justify-center w-full ">
       <section class="w-10/12 max-w-6xl">
-        <div class="grid grid-cols-3 gap-6">
+        <div class=" gap-6 flex flex-col md:flex-row justify-center items-center">
           <!-- Card 1 -->
           <article class="bg-[#D7E5F6] p-8 rounded-3xl">
             <div
@@ -118,7 +121,7 @@
           Get in Touch
         </h2>
 
-        <form class="flex flex-col w-full text-gray-400 bg-white px-40 py-10 gap-4">
+        <form class="flex flex-col w-full text-gray-400 bg-white  py-10 gap-4 md:px-40">
           <label for="name" class="bg-white self-start w-full">Name</label>
           <input
             type="text"
@@ -154,9 +157,21 @@
         </form>
       </section>
 
+
+      
+        <div class="flex justify-between items-end gap-4 px-4 mt-8 font-bold w-full  md:hidden">
+          <a href="#">FAQ</a>
+          <a href="#">Terms</a>
+          <a href="#">AI Policy</a>
+          <a href="#">Princing</a>
+        </div>
+     
+
+
       <footer
-        class="flex flex-row justify-between items-center w-full bottom-0 pt-32"
+        class="flex-row justify-between items-center w-full bottom-0 pt-32 hidden md:flex"
       >
+
         <p class="px-16">Acme productivity app ©2024 </p>
         <div class="flex justify-between items-end gap-8 px-16 font-bold">
           <a href="#">FAQ</a>
@@ -165,6 +180,9 @@
           <a href="#">Princing</a>
         </div>
       </footer>
+
+
+      
     </div>
   </body>
 </html>
